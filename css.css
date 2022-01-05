@@ -1,0 +1,118 @@
+/* font-family: 'The Nautigal', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+h1 {
+  font-size: 60px;
+  font-family: "The Nautigal", cursive;
+  text-align: center;
+  padding: 20px;
+}
+.body {
+  min-width: 400px;
+  min-height: 200px;
+  /* justify-items: right;
+  justify-content: right; */
+  text-align: right;
+}
+
+#taskInput {
+  height: 30px;
+  width: 100%;
+  border-bottom: solid 1px gray;
+}
+
+#btnAdd {
+  margin: 20px auto 20px;
+  padding: 8px 10px;
+  background-color: white;
+  border: solid 1px lightskyblue;
+  border-radius: 8px;
+  justify-content: end;
+  justify-items: end;
+}
+#btnAdd:hover {
+  background-color: lightskyblue;
+  /* color: white; */
+  border: solid 1px white;
+  cursor: pointer;
+}
+
+#newTasks-cntnr {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  /* background-color: lightskyblue; */
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+  border-bottom: solid 1px lightgrey;
+}
+
+.textField {
+  width: 100%;
+  text-align: start;
+}
+
+.task a {
+  /* line-height: 20px; */
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  display: block;
+  padding: 5px;
+  color: tomato;
+  /* border: solid 1px rgb(255, 255, 255);
+  border-radius: 8px;*/
+}
+
+.task a:hover {
+  /* border: solid 1px red; */
+  border-radius: 8px;
+  background-color: tomato;
+  color: white;
+}
+.checkbox {
+  cursor: pointer;
+  /* border: solid 1px lightskyblue; */
+}
+
+#oldTasks-cntnr {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#oldTasks-cntnr .textField {
+  /* text-decoration: line-through; */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) calc(50% - 1px), lightskyblue calc(50%), rgba(245, 0, 0, 0) calc(50% + 1px));
+  color: grey;
+}
+#oldTasks-cntnr .task {
+  border: none;
+}
