@@ -41,3 +41,9 @@ btnAdd.addEventListener("click", function () {
     taskInput.value = null;
   }
 });
+
+taskInput.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    btnAdd.click();
+  }
+});

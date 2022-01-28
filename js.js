@@ -45,6 +45,13 @@ btnAdd.addEventListener("click", function () {
   }
 });
 
+taskInput.addEventListener("click", function (event) {
+  console.log(event);
+  if (event.key === "Enter") {
+    btnAdd.click();
+  }
+});
+
 // delItem.addEventListener("click", () => {
 //   console.log("DELETE");
 // });
